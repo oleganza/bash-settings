@@ -1,0 +1,11 @@
+alias mate_mml='mate .git/config app features bin benchmarks doc lib config spinoffs spec README public .gitignore  Rakefile vendor tools merb'
+alias cdmml='cd ~/Work/mml/mml2.git'
+alias mml='cdmml && mate_mml'
+
+alias pl='cd ~/Work/pierlis'
+alias pierlis='cd ~/Work/pierlis'
+alias or='cd ~/Work/orange'
+alias orange='cd ~/Work/orange'
+alias gc='cd ~/Work/pierlis/global_council'
+alias spidart='cd ~/Work/pierlis/spidart'
+alias nuage='cd ~/Work/pierlis/nuage'
