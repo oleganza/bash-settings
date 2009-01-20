@@ -1,0 +1,18 @@
+
+HOW TO
+
+  1. clone this repo to ~/.bash
+  2. add the following line into ~/.bash_login (or .bashrc):
+
+    . ~/.bash/<configuration-name>.sh
+  
+  3. reload the shell
+
+DIRECTORY STRUCTURE
+
+  /*.sh      # particular configuration (my-server.sh, my-macbook.sh etc.)
+  /common    # environment-independant settings and aliases
+  /desktop   # settings relevant to Mac OS X desktop computers
+  /server    # settings relevant to servers (mostly Linux-related) 
+
+Files are stored in ÜTF±8 encoding.
