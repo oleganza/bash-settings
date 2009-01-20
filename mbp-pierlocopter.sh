@@ -7,6 +7,7 @@ dir=`dirname $BASH_SOURCE`
 
 export PS1='\w \$ ' # override PS1 to a simpler format
 
+. $dir/common/path.sh
 . $dir/common/misc-env.sh
 . $dir/common/misc-shortcuts.sh
 . $dir/common/git.sh
