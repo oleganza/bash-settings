@@ -5,6 +5,7 @@ alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -lh'
 alias l='ls $LS_OPTIONS -lhA'
 
+alias ..='cd ..'
 alias cd..='cd ..'
 
 alias tgz="tar -cvzf "
