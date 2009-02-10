@@ -21,6 +21,11 @@ alias gdc='git svn dcommit'
 alias gnc='git svn fetch && git svn rebase && git svn dcommit'
 alias gcn='git svn fetch && git svn rebase && git svn dcommit'
 
+# Usage:
+#   gc 'bug is fixed'                 # non-interactive mode
+#   gc                                # interactive mode
+#   Commit message: bug is fixed
+#
 function gc { 
   local commitmessage
   if [ "" = "$1" ]; then 
