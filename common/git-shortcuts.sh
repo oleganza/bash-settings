@@ -1,7 +1,7 @@
 # Git shortcuts
 alias gs='git status'
 alias ga='git add'
-alias gc='git commit -m'
+#alias gc='git commit -m'
 alias gp='git pull $* && git push $*'
 alias gull='git pull'
 alias gush='git push'
@@ -20,3 +20,14 @@ alias gfr='git svn fetch && git svn rebase'
 alias gdc='git svn dcommit'
 alias gnc='git svn fetch && git svn rebase && git svn dcommit'
 alias gcn='git svn fetch && git svn rebase && git svn dcommit'
+
+function gc { 
+  local commitmessage
+  if [ "" = "$1" ]; then 
+    echo -n 'Commit message: '
+    commitmessage="$(ruby -e "puts gets")"
+    git commit -m "$commitmessage"
+  else
+    git commit -m "$1"
+  fi
+}
