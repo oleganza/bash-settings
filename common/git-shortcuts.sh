@@ -14,6 +14,11 @@ alias gd1='echo "git diff HEAD";  git diff HEAD'
 alias gd2='echo "git diff HEAD^"; git diff HEAD^'
 alias grmall="gs | grep 'deleted:' | awk '{print \$3}' | xargs git rm -f"
 
+# Git submodule shortcuts
+
+alias gsa='git submodule add'
+alias gsu='git submodule update --init'
+
 # Git svn shortcuts
 alias gf='git svn fetch'
 alias gfr='git svn fetch && git svn rebase'
