@@ -1,7 +1,7 @@
 # Git shortcuts
 alias gs='git status; git submodule status'
 alias ga='git add'
-#alias gc='git commit -m'
+# alias gc='git commit -m'    (See function below)
 alias gp='git pull $* && git push $*'
 alias gull='git pull'
 alias gush='git push'
@@ -13,6 +13,19 @@ alias gd='git diff'
 alias gd1='echo "git diff HEAD";  git diff HEAD'
 alias gd2='echo "git diff HEAD^"; git diff HEAD^'
 alias grmall="gs | grep 'deleted:' | awk '{print \$3}' | xargs git rm -f"
+
+# on my macbook pro only 'h', 'l', 'w', 'x' are reserved
+alias s='gs'
+alias a='ga'
+alias c='gc'
+alias u='gull'
+alias p='gush'
+alias g='gl'
+alias b='gb'
+alias o='gco'
+alias d='gd'
+alias d1='gd1'
+alias d2='gd2'
 
 # Git submodule shortcuts
 
