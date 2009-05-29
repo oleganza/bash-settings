@@ -16,3 +16,7 @@ alias rake?="rake -T | g? \$1"
 alias gem?="gem list | g? \$1"
 
 alias mgem="cd \$GEMS; mate \$1"
+
+alias gemi="sudo gem install --no-ri --no-rdoc"
+alias geminst=gemi
+alias geminstall=gemi
