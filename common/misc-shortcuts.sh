@@ -17,6 +17,5 @@ alias gem?="gem list | g? \$1"
 
 alias mgem="cd \$GEMS; mate \$1"
 
-alias gemi="sudo gem install --no-ri --no-rdoc"
-alias geminst=gemi
-alias geminstall=gemi
+alias sgi="sudo gem install --no-ri --no-rdoc"
+alias sgi64="sudo env ARCHFLAGS=\"-Os -arch x86_64 -fno-common\" gem install --no-ri --no-rdoc"
