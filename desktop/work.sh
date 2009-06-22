@@ -17,3 +17,5 @@ alias cdrb='    oss; cd ruby'
 alias cdruby='  cdrb'
 
 alias .bash='   cd ~/.bash'
+
+alias ru='touch tmp/restart.txt' # stands for 'rack up': reloads rack (merb) app
