@@ -12,7 +12,7 @@ alias gco='git checkout'
 alias gd='git diff'
 alias gd1='echo "git diff HEAD";  git diff HEAD'
 alias gd2='echo "git diff HEAD^"; git diff HEAD^'
-alias grmall="gs | grep 'deleted:' | awk '{print \$3}' | xargs git rm -f"
+alias grmall="git status | grep 'deleted:' | awk '{print \$3}' | xargs git rm -f"
 
 # on my macbook pro only 'h', 'l', 'w', 'x' are reserved
 alias s='gs'
