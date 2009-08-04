@@ -13,6 +13,11 @@ alias gd1='echo "git diff HEAD";  git diff HEAD'
 alias gd2='echo "git diff HEAD^"; git diff HEAD^'
 alias grmall="git status | grep 'deleted:' | awk '{print \$3}' | xargs git rm -f"
 
+# this command loads one letter aliases on demand
+git_shortcuts_dir=`dirname $BASH_SOURCE`
+alias gitoneletteraliases=". $git_shortcuts_dir/git-one-letter-aliases.sh"
+
+
 # Git submodule shortcuts
 
 alias gsa='git submodule add'
