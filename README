@@ -4,9 +4,10 @@ HOW TO
   1. clone this repo to ~/.bash
   2. add the following line into ~/.bash_login (or .bashrc):
 
-    . ~/.bash/<configuration-name>.sh
+     . ~/.bash/<configuration-name>.sh
   
   3. reload the shell
+
 
 DIRECTORY STRUCTURE
 
