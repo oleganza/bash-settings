@@ -12,6 +12,9 @@ alias cd..='cd ..'
 alias pd='pushd'
 alias ud='popd'
 
+alias vf='pushd'
+alias fv='popd'
+
 alias tgz="tar -cvzf "
 alias zxvf="tar zxvf "
 alias g?="grep \$1"
