@@ -9,6 +9,9 @@ alias l?="l | g? \$1"
 alias ..='cd ..'
 alias cd..='cd ..'
 
+alias pd='pushd'
+alias ud='popd'
+
 alias tgz="tar -cvzf "
 alias zxvf="tar zxvf "
 alias g?="grep \$1"
@@ -19,3 +22,5 @@ alias mgem="cd \$GEMS; mate \$1"
 
 alias sgi32="env ARCHFLAGS=\"-Os -arch i386 -fno-common\" gem install --no-ri --no-rdoc"
 alias sgi64="env ARCHFLAGS=\"-Os -arch x86_64 -fno-common\" gem install --no-ri --no-rdoc"
+
+bind '"\t":menu-complete'

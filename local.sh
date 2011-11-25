@@ -23,3 +23,5 @@ export PS1='\[\033[0;37m\]\w\[\033[00m\] \$ ' # override PS1 to a simpler format
 alias rc='cd ~/.bash; mate . -w; source ~/.bash_login'
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
+
+eval "$(rbenv init -)"
