@@ -26,4 +26,5 @@ alias mgem="cd \$GEMS; mate \$1"
 alias sgi32="env ARCHFLAGS=\"-Os -arch i386 -fno-common\" gem install --no-ri --no-rdoc"
 alias sgi64="env ARCHFLAGS=\"-Os -arch x86_64 -fno-common\" gem install --no-ri --no-rdoc"
 
-bind '"\t":menu-complete'
+# Cycling tab-completion. Disabling because it's more annoying than without it.
+# bind '"\t":menu-complete'
