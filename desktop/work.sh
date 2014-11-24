@@ -1,4 +1,4 @@
-alias ru='touch tmp/restart.txt' # stands for 'rack up': reloads rack (merb) app
+alias ru='touch tmp/restart.txt' # stands for 'rack up': reloads rack app
 alias xcode='open *.xcodeproj'
 
 function trash {
@@ -7,3 +7,6 @@ do
 osascript -e "tell app \"Finder\" to delete POSIX file \"${PWD}/$b\"" 1>/dev/null
 done
 }
+
+alias fix='commit --amend -C HEAD'
+alias ff='merge --ff-only'
