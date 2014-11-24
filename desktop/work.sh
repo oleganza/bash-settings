@@ -8,5 +8,5 @@ osascript -e "tell app \"Finder\" to delete POSIX file \"${PWD}/$b\"" 1>/dev/nul
 done
 }
 
-alias fix='commit --amend -C HEAD'
-alias ff='merge --ff-only'
+alias fix='git commit --amend -C HEAD'
+alias ff='git merge --ff-only'
