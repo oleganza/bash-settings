@@ -8,10 +8,16 @@ alias gsh='git show'
 alias gl='git log'
 alias gb='git branch'
 alias gco='git checkout'
-alias gd='git diff'
-alias gd1='echo "git diff HEAD";  git diff HEAD'
-alias gd2='echo "git diff HEAD^"; git diff HEAD^'
+alias gd='git diff' # show unstaged diff
+alias gdc='git diff --cached' # show staged diff (what will be committed)
+alias gd1='git diff HEAD' # show unstaged|staged diff (all uncommitted state)
 alias grmall="git status | grep 'deleted:' | awk '{print \$3}' | xargs git rm -f"
+
+alias fix='git commit --amend -C HEAD'
+alias ff='git merge --ff-only'
+alias squash='git merge --squash --no-commit'
+
+alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # this command loads one letter aliases on demand
 git_shortcuts_dir=`dirname $BASH_SOURCE`
@@ -22,13 +28,6 @@ alias gitoneletteraliases=". $git_shortcuts_dir/git-one-letter-aliases.sh"
 
 alias gsa='git submodule add'
 alias gsu='git submodule update --init'
-
-# Git svn shortcuts
-alias gf='git svn fetch'
-alias gfr='git svn fetch && git svn rebase'
-alias gdc='git svn dcommit'
-alias gnc='git svn fetch && git svn rebase && git svn dcommit'
-alias gcn='git svn fetch && git svn rebase && git svn dcommit'
 
 # Usage:
 #   gc 'bug is fixed'                 # non-interactive mode
