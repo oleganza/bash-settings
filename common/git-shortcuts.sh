@@ -10,6 +10,8 @@ alias gb='git branch'
 alias gco='git checkout'
 alias gd='git diff' # show unstaged diff
 alias gdc='git diff --cached' # show staged diff (what will be committed)
+alias gds='git diff --cached' # show staged diff (what will be committed)
+alias gsd='git diff --cached' # show staged diff (what will be committed)
 alias gd1='git diff HEAD' # show unstaged|staged diff (all uncommitted state)
 alias grmall="git status | grep 'deleted:' | awk '{print \$3}' | xargs git rm -f"
 
