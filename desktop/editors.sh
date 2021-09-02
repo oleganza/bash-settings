@@ -1,10 +1,4 @@
-export ASYNC_EDITOR="mate" 
-export EDITOR="mate -w" 
-export CVSEDITOR="mate -w" 
-export SVN_EDITOR="mate -w"
-
-# common typos
-alias mt='mate'
-alias amte='mate'
-alias atme='mate'
-alias mate.='mate .'
+export ASYNC_EDITOR="subl" 
+export EDITOR="subl" 
+export CVSEDITOR="subl" 
+export SVN_EDITOR="subl"

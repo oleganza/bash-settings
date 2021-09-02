@@ -1,4 +1,2 @@
-export GOPATH=$HOME/Code/go
+export GOPATH=$HOME/Work/go
 export PATH=$PATH:$GOPATH/bin
-
-export GO15VENDOREXPERIMENT=1
